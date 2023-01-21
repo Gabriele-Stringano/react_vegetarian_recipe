@@ -8,7 +8,7 @@
   <p align="center">
   A tool for researching information about vegetarian recipes. Powered by  APIs and React
     <br />
-    <a href="capable-maamoul-4da65e.netlify.app/"><strong>Try the program »</strong></a>
+    <a href="https://capable-maamoul-4da65e.netlify.app/"><strong>Try the program »</strong></a>
   </p>
 </div>
 
