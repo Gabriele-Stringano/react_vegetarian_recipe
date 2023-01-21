@@ -13,6 +13,7 @@ import Home from './components/Home.js';
 import Research from './components/Research';
 import './App.css';
 import Recipe from './components/Recipe';
+import Footer from './components/layouts/Footer';
 
 
 class App extends Component{
@@ -34,6 +35,7 @@ class App extends Component{
                 <Recipe/>
               }/>
             </Routes>
+            <Footer/>
           </div>
         </div>
       </BrowserRouter>

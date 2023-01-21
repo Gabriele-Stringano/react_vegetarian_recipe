@@ -1,73 +1,84 @@
-.header{
+.header {
     display: flex;
-    position: fixed;
-    width: 100%;
-    justify-content: space-between;
     align-items: center;
     background-color: white;
     border-bottom: gray;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
 }
 
-.btn{   
+.btn {
     background: linear-gradient(to bottom, #00b0ff, #0091ea);
     color: white;
-    font-size:large;
-    padding: 12px 26px;
+    font-size: large;
+    padding: 12px 24px;
     cursor: pointer;
     border: none;
     text-decoration: none;
+    text-align: center;
 }
 
 .btn:hover {
     background: linear-gradient(to bottom, #0091ea, #00b0ff);
     box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
-  }
+}
 
-.logo{
-    display: none;
+.logo {
     cursor: pointer;
 }
 
-.form{
-    display: flex;
-    width: 100%;
-    justify-content: space-around;
-}
-
-.text{
-    font-size:x-large;
+.text {
     border: none;
-    background-color:white;
+    background-color: white;
+    font-size: x-large;
 }
 
 .text:focus {
     outline: none;
 }
 
-/* Desktop Styles */
-@media only screen and (min-width: 900px) {
-    .header{
+/* Mobile Styles */
+@media only screen and (max-width: 899px) {
+    .header {
         padding-left: 1%;
     }
 
-    .logo{
-        display:block;
-        cursor: pointer;
+    .logo {
+        display: none;
     }
 
-    .form{
-        padding-left: 15px;
+    .text {
+        width: 80%;
     }
 
-    .text{
+    .btn {
+        width: 20%;
+    }
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 900px) {
+    .header {
+        padding-left: 1%;
+    }
+
+    .logo {
+        display: block;
+    }
+
+    .text {
         border: 2px solid #ccc;
         border-radius: 20px;
+        width: 50%;
     }
 
-    .btn{
+    .btn {
         border: 2px solid black;
         border-radius: 10px;
-        margin: 10px;
+        margin-left: 10px;
+        margin-right: 20px;
+        width: 10%;
+        font-size: 22px;
     }
 }
