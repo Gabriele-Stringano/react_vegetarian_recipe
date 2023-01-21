@@ -118,9 +118,7 @@ List of resources I used:
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 
-[product-screenshot1]: 
-[product-screenshot2]: 
-[product-screenshot3]:
+
 [Javascript.js]: https://img.shields.io/static/v1?message=Javascript&logo=JavaScript&labelColor=5c5c5c&color=efd81d&logoColor=white&label=%20&style=FOR-THE-BADGE
 [Javascript-url]: https://en.wikipedia.org/wiki/JavaScript
 [NodeJs.js]: https://img.shields.io/badge/Js-Node.js-brightgreen
