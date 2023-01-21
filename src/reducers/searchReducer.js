@@ -10,7 +10,7 @@ const initialState = {
     recipe: []
 }
 
-export default function(state = initialState, action){
+export default function searchReducer(state = initialState, action){
     switch (action.type){
         case SEARCH_FOOD:
             return{
