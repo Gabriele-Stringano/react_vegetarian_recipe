@@ -15,7 +15,7 @@ function TextHome() {
          emissions and preserve natural resources.<br/>
          Overall, a well-planned vegan diet can 
          provide all the necessary nutrients for a healthy lifestyle.</p>
-      <Link className={StyleCSS.btn} to={'/prova'}>Start your journey</Link>
+      <Link className={StyleCSS.btn} to={'/research'}>Start your journey</Link>
     </div>
   );
 }
