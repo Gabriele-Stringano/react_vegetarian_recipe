@@ -1,70 +1,136 @@
-# Getting Started with Create React App
+<!-- PROJECT LOGO -->
+<br />
+<div align="center">
+    <img src="logo.png" alt="Logo" width="80" height="80">
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+  <h3 align="center">React Vegetaria Recipe by Gabriele Stringano</h3>
 
-## Available Scripts
+  <p align="center">
+  A tool to search for information about books. Powered by  APIs
+    <br />
+    <a href="https://glistening-lily-15ec07.netlify.app/"><strong>Try the program »</strong></a>
+  </p>
+</div>
 
-In the project directory, you can run:
+<!-- TABLE OF CONTENTS -->
+<details>
+  <summary>Table of Contents</summary>
+  <ol>
+    <li>
+      <a href="#about-the-project">About The Project</a>
+      <ul>
+        <li><a href="#built-with">Built With</a></li>
+      </ul>
+    </li>
+    <li><a href="#how-it-work">How it Work</a></li>
+    <li>
+      <a href="#getting-started">Getting Started</a>
+      <ul>
+        <li><a href="#prerequisites">Prerequisites</a></li>
+      </ul>
+    </li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#acknowledgments">Acknowledgments</a></li>
+  </ol>
+</details>
 
-### `npm start`
+<!-- ABOUT THE PROJECT -->
+## 💡About The Project
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+As a Start2impact student, I developed this application to put my newly acquired knowledge of JavaScript into practice.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+<p align="right">(<a href="#top">back to top</a>)</p>
 
-### `npm test`
+<ol>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Built With
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+* [![Html][Html.js]][Html-url]
+* [![Css][Css.js]][Css-url]
+* [![Javascript][Javascript.js]][Javascript-url]
+* [![NodeJs][NodeJs.js]][NodeJs-url]
+* <a href="https://openlibrary.org/developers/api">External Service-> Open Library</a>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+<p align="right">(<a href="#top">back to top</a>)</p>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+</ol>
 
-### `npm run eject`
+<!-- How it Work + ScreenShot -->
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## ⚙️How it Work
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- The site allows users to search for books by desired genre and view information such as: title, authors, and description. All in the English language.</br>
+The text box is an Input element. By pressing on the Search button, the browser will contact the external service (Open Library) to get the list of books according to the genre indicated in the text box.
+![product-screenshot1]
+- A limited number of books are printed on the screen; it's possible to display other books by pressing on the following button, and it's possible to go back with the previous button. The 2 buttons work due to an eventListener each and a counter called offsett, which keeps in memory the position reached in the dataset.
+![product-screenshot2]
+- Pressing in the box of any book will execute a new request to the external service; the previously saved key is passed as the ID of the item. 
+The desciption of the book is then displayed on the page
+[![product-screenshot3]]
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+<p align="right">(<a href="#top">back to top</a>)</p>
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+<!-- GETTING STARTED -->
+## ❗Getting Started
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+To get a local copy up and running follow these simple example steps:
+<ol>
+<li> Go to  https://github.com/Gabriele-Stringano/Pocket-Library and press the green button </li>
+<li> Select Download zipper </li>
+<li> Open the zipper and extract the folder </li>
+<li> Open a text editor and add the extracted folder </li>
+<li> Install the dependencies: npm install</li>
+<li> Run the Program: npm run dev</li>
+<li> The browser should open automatically</li>
+<li> Check out for index.html in the /dist folder for manual start </li>
+</ol>
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Prerequisites
+You need to own these programs:
+<ul>
+    <li> A text editor-IDE </li>
+    <li> A program to unzip files</li>
+    <li> Instal Node.js</li>
+</ul>
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+<!-- CONTACT -->
+## 📲Contact
 
-### Analyzing the Bundle Size
+Gabriele Stringano Email: - gabrielestringano@gmail.com
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+My Project: - https://github.com/Gabriele-Stringano/
+<p align="right">(<a href="#top">back to top</a>)</p>
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
+<!-- ACKNOWLEDGMENTS -->
+## 📚Acknowledgments
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+List of resources I used:
 
-### Deployment
+* [GitHub](https://github.com)
+* [Start2Impact](https://www.start2impact.it/)
+* [Visual-Studio](https://code.visualstudio.com/)
+* [Best-README-Template](https://github.com/ferneynava/Best-README-Template)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+<p align="right">(<a href="#top">back to top</a>)</p>
 
-### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+<!-- MARKDOWN LINKS & IMAGES -->
+<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+
+[product-screenshot1]: src/img/JsScreenshot1.png
+[product-screenshot2]: src/img/JsScreenshot2.png
+[product-screenshot3]: src/img/JsScreenshot3.png
+[Html.js]: https://img.shields.io/static/v1?message=HTML5&logo=HTML5&labelColor=5c5c5c&color=c31111&logoColor=white&label=%20&style=FOR-THE-BADGE
+[Html-url]: https://www.html.it/
+[Css.js]: https://img.shields.io/static/v1?message=CSS3&logo=css3&labelColor=5c5c5c&color=1111c3&logoColor=white&label=%20&style=FOR-THE-BADGE
+[Css-url]: https://en.wikipedia.org/wiki/CSS
+[Javascript.js]: https://img.shields.io/static/v1?message=JAVASCRIPT&logo=JavaScript&labelColor=5c5c5c&color=efd81d&logoColor=white&label=%20&style=FOR-THE-BADGE
+[Javascript-url]: https://en.wikipedia.org/wiki/JavaScript
+[NodeJs.js]: https://img.shields.io/badge/Js-Node.js-brightgreen
+[NodeJs-url]: https://nodejs.org/en/
