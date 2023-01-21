@@ -5,14 +5,14 @@
 }
 
 .title{
-    font-family: Pacifico, cursive;
+    font-family: 'Open Sans', sans-serif;
     font-size: 2em;
     color: green;
 }
 
 .text{
     font-family: 'Open Sans', sans-serif;
-    font-size: 16px;
+    font-size: 30px;
     color: #333;
     line-height: 1.2;
     margin-bottom: 20px;
@@ -42,7 +42,7 @@
        }
        .text{
         font-family: 'Open Sans', sans-serif;
-        font-size: 22px;
+        font-size: 40px;
         color: #333;
         line-height: 1.5;
     }

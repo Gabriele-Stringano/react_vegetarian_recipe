@@ -16,7 +16,7 @@ export function Recipe({fetchRecipe, recipe}) {
           <thead>
             <tr>
               <th>Name</th>
-              <th>Amount</th>
+              <th>Qty</th>
               <th>Unit</th>
             </tr>
           </thead>

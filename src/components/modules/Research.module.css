@@ -1,10 +1,12 @@
 .box{
     padding-top: 90px;
+    padding-bottom: 150px;
 }
 
 /* Desktop Styles */
 @media only screen and (min-width: 900px) {
     .box{
         padding-top: 110px;
+        padding-bottom: 110px;
     }
 }
