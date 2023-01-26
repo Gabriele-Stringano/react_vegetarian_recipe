@@ -1,7 +1,6 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-    <img src="logo.png" alt="Logo" width="80" height="80">
 
   <h3 align="center">React Vegetaria Recipe by Gabriele Stringano</h3>
 
@@ -56,9 +55,9 @@ As a Start2impact student, I developed this application to put my newly acquired
 
 </ol>
 
-<!-- How it Work + ScreenShot -->
+<!-- How it Works + ScreenShot -->
 
-## ⚙️How it Work
+## ⚙️How it Works
 
 
 
