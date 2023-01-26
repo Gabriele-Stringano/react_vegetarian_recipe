@@ -15,7 +15,6 @@ export class RecipeCard extends Component {
                 <img className={StyleCSS.img} src={recipe.image} alt="Recipe Cover" />  
                    <Link className={StyleCSS.link} to={'/research/'+recipe.id }>
                         Recipe Details
-                        <i className="fas fa-chevron-right" />
                    </Link>
               </div>
             </div>

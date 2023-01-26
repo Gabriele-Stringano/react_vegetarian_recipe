@@ -1,6 +1,7 @@
 import {FETCH_FOODS, SEARCH_FOOD, FETCH_FOOD, LOADING} from '../actions/types'
 
 const initialState = {
+    //Text in the text-input element
     text: '',
     //json data obtained
     recipes: [],
@@ -25,7 +26,6 @@ export default function searchReducer(state = initialState, action){
                 loading: false
         }
         case FETCH_FOOD:
-            console.log('fetch recipe action received');
             return{
                 ...state,
                 recipe: action.payload,

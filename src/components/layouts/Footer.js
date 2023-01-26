@@ -11,10 +11,10 @@ const Footer = () => {
         <p>by Gabriele Stringano</p>
       </div>
       <div className= {FooterCSS.rightSide}>
-        <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">
+        <a href="https://www.linkedin.com/in/gabriele-stringano/" target="_blank" rel="noopener noreferrer">
           <img src={linkedin} alt="LinkedIn logo" />
         </a>
-        <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">
+        <a href="https://github.com/Gabriele-Stringano/react_vegetarian_recipe" target="_blank" rel="noopener noreferrer">
           <img src={github} alt="GitHub logo" />
         </a>
       </div>
