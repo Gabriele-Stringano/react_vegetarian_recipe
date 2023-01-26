@@ -39,7 +39,6 @@ export const setOffset = (offset,direction,callback ) => dispatch =>{
 
 //search for the list of recipes
 export const fetchRecipes = (text,offset) => dispatch => {
-    console.log(offset);
     axios.get(`https://api.spoonacular.com/recipes/complexSearch?apiKey=${process.env.REACT_APP_RECIPE_API_KEY}&query=${text}&diet=vegetarian&number=9&offset=${offset}`)
         .then(response => dispatch({
             type:FETCH_FOODS,

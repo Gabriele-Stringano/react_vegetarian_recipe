@@ -15,9 +15,10 @@ export class Header extends Component{
     }
 
     onClick = e => {
-      this.props.setOffset(this.props.offset, 'start');
-      this.props.fetchRecipes(this.props.text, this.props.offset);
-      this.props.setLoading();
+      this.props.setOffset(this.props.offset, 'start', (newOffset) => {
+        this.props.fetchRecipes(this.props.text, newOffset)
+        this.props.setLoading();
+      });
     }
                
     render() {
