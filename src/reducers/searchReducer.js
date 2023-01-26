@@ -1,8 +1,10 @@
-import {FETCH_FOODS, SEARCH_FOOD, FETCH_FOOD, LOADING} from '../actions/types'
+import {FETCH_FOODS, SET_OFFSET, SEARCH_FOOD, FETCH_FOOD, LOADING} from '../actions/types'
 
 const initialState = {
     //Text in the text-input element
     text: '',
+    //offset
+    offset: 0,
     //json data obtained
     recipes: [],
     //state, change when request is sent and returned
@@ -18,6 +20,11 @@ export default function searchReducer(state = initialState, action){
                 ...state,
                 text: action.payload,
                 loading: false
+            }
+        case SET_OFFSET:
+            return{
+                ...state,
+                offset: action.payload
             }
         case FETCH_FOODS:
             return{

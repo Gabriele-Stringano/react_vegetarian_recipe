@@ -2,7 +2,9 @@ import React, { Component } from 'react'
 import { connect } from 'react-redux';
 import Spinner from './layouts/Spinner';
 import RecipesContanier from './RecipesContanier';
+import ResearchButtons from './ResearchButtons';
 import StyleCSS from './modules/Research.module.css';
+
 
 export class Research extends Component {
   render() {
@@ -10,6 +12,7 @@ export class Research extends Component {
     return (
       <div className={StyleCSS.box}>
         {loading ? <Spinner/> : <RecipesContanier/>}
+        {loading ? null : <ResearchButtons/>}
       </div>
     )
   }

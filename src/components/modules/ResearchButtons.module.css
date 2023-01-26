@@ -1,0 +1,28 @@
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn{
+    background: blue;
+    color: white;
+    font-size:large;
+    padding: 18px;
+    cursor: pointer;
+    border: none;
+    text-decoration: none;
+    margin: 0 10px;
+    width: 120px;
+}
+
+
+/* Desktop Styles */
+@media only screen and (min-width: 900px) {
+    .btn{
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    }
+}
