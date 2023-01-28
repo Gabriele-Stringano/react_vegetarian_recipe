@@ -18,19 +18,8 @@
     margin-bottom: 20px;
 }
 
-.btn{   
-    background: linear-gradient(to bottom, #00b0ff, #0091ea);
-    color: white;
-    font-size:large;
-    padding: 12px 26px;
-    cursor: pointer;
-    border: none;
-    text-decoration: none;
-}
-
-.btn:hover {
-    background: linear-gradient(to bottom, #0091ea, #00b0ff);
-    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+.image{   
+   height: 150px; 
   }
 
 /* Desktop Styles */
@@ -50,5 +39,9 @@
         font-family: Pacifico, cursive;
         font-size: 3em;
         color: green;
+    }
+
+    .image{   
+        height: 300px; 
     }
 }

@@ -1,6 +1,6 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import StyleCSS from './modules/TextHome.module.css';
+import imageHome from "../images/homeImage.jpg";
 
 function TextHome() {
   return (
@@ -10,7 +10,7 @@ function TextHome() {
         Healthy<br/> 
         Green<br/>
         Fun</p>
-      <Link className={StyleCSS.btn} to={'/research'}>Start your journey</Link>
+        <img src={imageHome} className= {StyleCSS.image} alt="VegFoto"/>
     </div>
   );
 }
