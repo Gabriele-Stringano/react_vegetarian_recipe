@@ -61,13 +61,11 @@ As a Start2impact student, I developed this application to put my newly acquired
 
 - The site allows users to search vegetarian recipes by name and views informations such as: title, serving, and ingredients. In English.<br/>
 The text box is an Input element. By pressing on the Search button, the browser will contacts the external service (spoonacular) by an action (Redux) to gets the list of recipes according to the name indicated in the text box. The list of recipes is saved in the Store by a dispatch (Redux).
-![product-screenshot1]
 - it's possible to display other recipes by pressing on the Next button, and it's possible to go back with the Previous button. Buttons work due to an eventListener that triggers an action that modifies the offsett in the Store (Redux).
-![product-screenshot2]
-- Pressing in the button of any recipe will execute a new request to the external service; The 'Link' element (React-Router-Dom) brings the user to the page '/research/:id' that displays informations such as: title, serving, and ingredients. 
-[![product-screenshot3]]
+- Pressing in the button of any recipe will execute a new request to the external service; The 'Link' element (React-Router-Dom) brings the user to the page '/research/:id' that displays informations such as: title, serving, and ingredients.
+- The APIKEY is required to use the API, it's stored in a .env file.
+
 <p align="right">(<a href="#top">back to top</a>)</p>
--The APIKEY is required to use the API, it's stored in a .env file.
 
 
 <!-- GETTING STARTED -->
@@ -103,7 +101,6 @@ My Projects: - https://github.com/Gabriele-Stringano/
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 
-
 <!-- ACKNOWLEDGMENTS -->
 ## 📚Acknowledgments
 
@@ -122,9 +119,9 @@ List of resources I used:
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 
-[product-screenshot1]: src/img/JsScreenshot1.png
-[product-screenshot2]: src/img/JsScreenshot2.png
-[product-screenshot3]: src/img/JsScreenshot3.png
+[product-screenshot1]: public/imagesReadme/ScreenshotStore.png
+[product-screenshot2]: public/imagesReadme/ScreenshotAction.png
+[product-screenshot3]: public/imagesReadme/ScreenshotRouting.png
 [Javascript.js]: https://img.shields.io/static/v1?message=Javascript&logo=JavaScript&labelColor=5c5c5c&color=efd81d&logoColor=white&label=%20&style=FOR-THE-BADGE
 [Javascript-url]: https://en.wikipedia.org/wiki/JavaScript
 [NodeJs.js]: https://img.shields.io/badge/Js-Node.js-brightgreen
