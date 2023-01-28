@@ -59,7 +59,7 @@ As a Start2impact student, I developed this application to put my newly acquired
 
 ## ⚙️How it Works
 
-- The site allows users to search vegetarian recipes by name and views informations such as: title, serving, and ingredients. In English.
+- The site allows users to search vegetarian recipes by name and views informations such as: title, serving, and ingredients. In English.<br/>
 The text box is an Input element. By pressing on the Search button, the browser will contacts the external service (spoonacular) by an action (Redux) to gets the list of recipes according to the name indicated in the text box. The list of recipes is saved in the Store by a dispatch (Redux).
 ![product-screenshot1]
 - it's possible to display other recipes by pressing on the Next button, and it's possible to go back with the Previous button. Buttons work due to an eventListener that triggers an action that modifies the offsett in the Store (Redux).
