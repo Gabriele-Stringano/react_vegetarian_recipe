@@ -33,6 +33,7 @@ export default function searchReducer(state = initialState, action){
                 loading: false
         }
         case FETCH_FOOD:
+            console.log(action.payload)
             return{
                 ...state,
                 recipe: action.payload,

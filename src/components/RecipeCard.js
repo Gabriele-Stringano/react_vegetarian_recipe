@@ -12,7 +12,9 @@ export class RecipeCard extends Component {
                 <p className={StyleCSS.p}>
                    {recipe.title}
                 </p>
-                <img className={StyleCSS.img} src={recipe.image} alt="Recipe Cover" />  
+                <Link to={'/research/'+recipe.id }>
+                <img className={StyleCSS.img} src={recipe.image} alt="Recipe Cover" />
+                </Link>
                    <Link className={StyleCSS.link} to={'/research/'+recipe.id }>
                         Recipe Details
                    </Link>

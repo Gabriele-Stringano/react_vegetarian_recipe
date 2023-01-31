@@ -6,6 +6,7 @@
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     position: fixed;
     width: 100%;
+    z-index: 1;
 }
 
 .btn {
@@ -22,11 +23,22 @@
 .btn:hover {
     background: linear-gradient(to bottom, #0091ea, #00b0ff);
     box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+    color: black;
 }
 
 .logo {
     cursor: pointer;
+    border-radius: 100%;
+    margin-bottom: 3px;
+    overflow: hidden;
+    transition-duration: 0.8s;
+    transition-property: transform;
 }
+
+.logo:hover {
+    transform: rotate(360deg);
+}
+
 
 .text {
     border: none;
@@ -80,5 +92,9 @@
         margin-right: 20px;
         width: 10%;
         font-size: 22px;
+    }
+    
+    .text:hover{
+        box-shadow: 3px 3px rgba(0, 0, 0, 0.2);
     }
 }

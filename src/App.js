@@ -11,7 +11,7 @@ import store from './store'
 import Header from './components/layouts/Header.js'
 import Home from './components/Home.js';
 import Research from './components/Research';
-import Recipe from './components/Recipe';
+import {Recipe} from './components/Recipe';
 import Footer from './components/layouts/Footer';
 import './App.css';
 

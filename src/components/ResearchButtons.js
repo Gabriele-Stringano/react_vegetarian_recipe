@@ -22,8 +22,8 @@ export class ResearchButtons extends Component {
   render() {
     return (
         <div className={StyleCSS.box}>
-            <button type="button" className={StyleCSS.btn} onClick={this.onClickPrevious}>Previous</button>
-            <button type="button" className={StyleCSS.btn} onClick={this.onClickNext}>Next</button>
+            <button type="button" className={StyleCSS.btnPrevious} onClick={this.onClickPrevious}>Previous</button>
+            <button type="button" className={StyleCSS.btnNext} onClick={this.onClickNext}>Next</button>
         </div>
     )
   }

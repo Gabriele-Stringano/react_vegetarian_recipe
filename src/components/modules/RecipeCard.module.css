@@ -27,7 +27,13 @@
     height: 231px;
     width: 312px;
     border-radius: 10%;
+    transform: scale(1);
+    transition: transform 0.2s ease-in-out;
 }
+
+.img:hover {
+    transform: scale(1.05);
+  }
 
 .link{
     background: greenyellow;
@@ -39,7 +45,13 @@
     border: none;
     text-decoration: none;
     border-radius: 50%;
+    transition: all .6s;
 }
+
+.link:hover{
+    background-color: green;
+    color: #fff;
+  }
 
 /* Desktop Styles */
 @media only screen and (min-width: 900px) {
