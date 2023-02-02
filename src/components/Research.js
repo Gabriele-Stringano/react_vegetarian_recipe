@@ -1,28 +1,18 @@
-import React, { Component } from 'react'
-import { connect } from 'react-redux';
+import React from 'react'
 import Spinner from './layouts/Spinner';
 import RecipesContanier from './RecipesContanier';
 import ResearchButtons from './ResearchButtons';
 import StyleCSS from './modules/Research.module.css';
+import { useSelector} from 'react-redux'
 
+export function Research () {
 
-export class Research extends Component {
-  render() {
-    const {loading}= this.props;
-    return (
-      <div className={StyleCSS.box}>
-        {loading ? <Spinner/> : <RecipesContanier/>}
-        {loading ? null : <ResearchButtons/>}
-      </div>
-    )
-  }
+  const loading = useSelector((state) =>  state.recipes.loading)
+
+  return (
+    <div className={StyleCSS.box}>
+      {loading ? <Spinner/> : <RecipesContanier/>}
+      {loading ? null : <ResearchButtons/>}
+    </div>
+  )
 }
-
-const MapStateToProps = state =>({
-    loading: state.recipes.loading
-});
-
-export default connect(
-    MapStateToProps,
-    {}
-)(Research);

@@ -1,9 +1,8 @@
-import React, { Component } from 'react'
+import React from 'react'
 import { Link } from 'react-router-dom';
 import StyleCSS from './modules/RecipeCard.module.css';
 
-export class RecipeCard extends Component {
-  render() {
+export function RecipeCard () {
     const {recipe}= this.props;
     return (
         //boostrap
@@ -21,7 +20,4 @@ export class RecipeCard extends Component {
               </div>
             </div>
     )
-  }
 }
-
-export default RecipeCard

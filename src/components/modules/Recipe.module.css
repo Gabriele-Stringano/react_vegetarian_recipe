@@ -29,6 +29,11 @@
     border: 1px solid black;
   }
   
+  .divStyleText{
+    font-size: 16px;
+  }
+
+
   .img{
     margin-top: 10px;
     margin-bottom: 20px;
@@ -58,5 +63,9 @@
     .responsiveTable td {
       padding: 10px;
       border: 1px solid black;
+    }
+
+    .divStyleText{
+      font-size: 20px;
     }
 }

@@ -8,11 +8,11 @@ import { Provider } from 'react-redux';
 import store from './store'
 
 //import other components e styleDocumets
-import Header from './components/layouts/Header.js'
-import Home from './components/Home.js';
-import Research from './components/Research';
+import {Header} from './components/layouts/Header.js'
+import {Home} from './components/Home.js';
+import {Research} from './components/Research';
 import {Recipe} from './components/Recipe';
-import Footer from './components/layouts/Footer';
+import {Footer} from './components/layouts/Footer';
 import './App.css';
 
 class App extends Component{

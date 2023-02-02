@@ -1,8 +1,9 @@
 import React, { useEffect } from 'react'
 import { useSelector, useDispatch } from 'react-redux'
 import { useParams } from 'react-router-dom';
-import { fetchRecipe } from '../actions/searchAction';
+import { fetchRecipe, setLoading } from '../actions/searchAction';
 import StyleCSS from './modules/Recipe.module.css';
+import Spinner from './layouts/Spinner';
 
 //DOMPurify sanitizes HTML and prevents XSS attacks
 import DOMPurify from 'dompurify';
@@ -12,6 +13,7 @@ export function Recipe() {
     const { id } = useParams();
 
     const recipe = useSelector((state) =>  state.recipes.recipe)
+    const loading = useSelector((state) =>  state.recipes.loading)
     const dispatch = useDispatch();
 
     const recipePurifiedHTML = DOMPurify.sanitize(recipe.instructions);
@@ -45,20 +47,25 @@ export function Recipe() {
 
     useEffect(() => {
       dispatch(fetchRecipe(id));
+      dispatch(setLoading());
     }, [id,dispatch])
 
     return (
       <div className={StyleCSS.Container}>
+      {loading ? <Spinner/> : 
+      <>
       <div>
         <h1>{recipe.title}</h1>
         <div className={StyleCSS.divStyle}>Time:{recipe.readyInMinutes}</div>
         <div className={StyleCSS.divStyle}>Serving:{recipe.servings}</div>
         <h1>Instructions</h1>
-        <div className={StyleCSS.divStyle} dangerouslySetInnerHTML={{ __html: recipePurifiedHTML }} />
+        <div className={StyleCSS.divStyleText} dangerouslySetInnerHTML={{ __html: recipePurifiedHTML }} />
         <h1>Ingredients</h1>
         <IngredientsTable ingredients={recipe.extendedIngredients}/>
       </div>
         <img src={recipe.image} className={StyleCSS.img} alt="Recipe Cover" />
+      </>
+      }
       </div>
     );
   };

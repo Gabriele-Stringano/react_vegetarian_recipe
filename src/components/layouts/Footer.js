@@ -3,7 +3,7 @@ import FooterCSS from '../modules/Footer.module.css';
 import linkedin from './linkedin-logo.png'
 import github from './github-logo.png'
 
-const Footer = () => {
+export function Footer () {
   return (
     <footer className= {FooterCSS.footer}>
       <div className= {FooterCSS.leftSide}>
@@ -21,5 +21,3 @@ const Footer = () => {
     </footer>
   );
 };
-
-export default Footer;
