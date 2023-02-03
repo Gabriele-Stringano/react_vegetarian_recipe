@@ -1,39 +1,33 @@
-import React, { Component } from 'react'
+import React from 'react'
 import { setOffset,fetchRecipes,setLoading } from '../actions/searchAction';
-import { connect } from 'react-redux';
+import {useDispatch, useSelector } from 'react-redux';
 import StyleCSS from './modules/ResearchButtons.module.css';
 
-export class ResearchButtons extends Component {
+export function ResearchButtons() {
 
-    onClickPrevious = e => {
-        this.props.setOffset(this.props.offset, 'previous', (newOffset) => {
-            this.props.fetchRecipes(this.props.text, newOffset)
-            this.props.setLoading();
-          });
+  const text = useSelector((state) =>  state.recipes.text)
+  const offset = useSelector((state) =>  state.recipes.offset)
+  const dispatch = useDispatch();
+
+  const onClickPrevious = (e) => {
+    dispatch(setOffset(offset, 'previous', (newOffset) => {
+          dispatch(fetchRecipes(text, newOffset))
+          dispatch(setLoading());
+          }));
     };
 
-    onClickNext = e =>{
-        this.props.setOffset(this.props.offset, 'next', (newOffset) => {
-            this.props.fetchRecipes(this.props.text, newOffset)
-            this.props.setLoading();
-          });
+    const onClickNext = (e) =>{
+      dispatch(setOffset(offset, 'next', (newOffset) => {
+          dispatch(fetchRecipes(text, newOffset))
+          dispatch(setLoading());
+        }));
     };
 
-  render() {
+ 
     return (
         <div className={StyleCSS.box}>
-            <button type="button" className={StyleCSS.btnPrevious} onClick={this.onClickPrevious}>Previous</button>
-            <button type="button" className={StyleCSS.btnNext} onClick={this.onClickNext}>Next</button>
+            <button type="button" className={StyleCSS.btnPrevious} onClick={onClickPrevious}>Previous</button>
+            <button type="button" className={StyleCSS.btnNext} onClick={onClickNext}>Next</button>
         </div>
     )
-  }
 };
-
-const mapStateToProps = state => ({
-    //search in '/reducers/index how reducer is combined with the recipes attribute
-    //in this case recipes: searchReducer so it search infos in searchReducer.js
-    text: state.recipes.text,
-    offset: state.recipes.offset
-})
-
-export default connect(mapStateToProps, {setOffset,fetchRecipes,setLoading})(ResearchButtons)

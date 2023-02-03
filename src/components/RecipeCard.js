@@ -2,8 +2,8 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 import StyleCSS from './modules/RecipeCard.module.css';
 
-export function RecipeCard () {
-    const {recipe}= this.props;
+export function RecipeCard (props) {
+  const {recipe}= props;
     return (
         //boostrap
             <div className={StyleCSS.box}>

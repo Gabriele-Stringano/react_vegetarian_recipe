@@ -1,7 +1,7 @@
 import React from 'react'
 import Spinner from './layouts/Spinner';
-import RecipesContanier from './RecipesContanier';
-import ResearchButtons from './ResearchButtons';
+import {RecipesContanier} from './RecipesContanier';
+import {ResearchButtons} from './ResearchButtons';
 import StyleCSS from './modules/Research.module.css';
 import { useSelector} from 'react-redux'
 

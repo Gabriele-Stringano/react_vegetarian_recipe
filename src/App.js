@@ -1,4 +1,4 @@
-import React,{Component} from 'react';
+import React from 'react';
 
 //added react router for more pages
 import {BrowserRouter,Routes,Route} from 'react-router-dom';
@@ -15,8 +15,7 @@ import {Recipe} from './components/Recipe';
 import {Footer} from './components/layouts/Footer';
 import './App.css';
 
-class App extends Component{
-  render(){
+function App (){
     return(
       <Provider store={store}>
       <BrowserRouter>
@@ -40,7 +39,6 @@ class App extends Component{
       </BrowserRouter>
       </Provider>
     );
-  }
 }
 
 export default App;
